@@ -1,0 +1,227 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       oHendra
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700|Open+Sans:300,400,600,700');
+
+body,
+button,
+input,
+select,
+textarea,
+p {
+	font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.66;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+body,
+#content,
+.site-content-contain  {
+	background: #F8F8F8;
+}
+
+.site-footer {
+	background-color: #fff;
+	border: 0;
+}
+
+h2.headline-text {
+	color: #343B41;
+	font-size: 24px;
+	letter-spacing: 2px;
+	position: relative;
+}
+
+h2.headline-text:before {
+    position: absolute;
+    content: '';
+    width: 2em;
+    left: -2.5em;
+    top: 2.2em;
+    height: 6px;
+    background: #343B41;
+}
+
+h3.headline-text {
+	color: #343B41;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.entry-content {
+	background-color: #fff;
+	padding: 1em;
+	padding-left: 1.5em;
+}
+
+p.headline-text {
+	padding-top: 20px;
+	font-size: 11px;
+	letter-spacing: 0.7px;
+}
+
+.page .panel-content .entry-title, .page-title, 
+body.page:not(.twentyseventeen-front-page) .entry-title {
+	font-size: 24px;
+	position: relative;
+	color: #343B41;
+}
+
+.page .panel-content .entry-title, .page-title, 
+body.page:not(.twentyseventeen-front-page) .entry-title:before {
+    position: absolute;
+    content: '';
+    width: 2em;
+    left: -2.5em;
+    top: 0.6em;
+    height: 6px;
+    background: #343B41;
+}
+.pagination, .comments-pagination {
+	border: 0;
+}
+
+#sendpress-forms-widget-2 {
+	margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    padding: 3em;
+    padding-left: 3.5em;
+    background-color: #fff;
+}
+
+#sendpress-forms-widget-2 h2 {
+    color: #343B41;
+    position: relative;
+    font-size: 18px;
+}
+
+#sendpress-forms-widget-2 h2:before {
+    position: absolute;
+    content: '';
+    width: 3em;
+    left: -4.4em;
+    top: 0.5em;
+    height: 6px;
+    background: #343B41;
+}
+
+.sendpress-signup-form label {
+	font-size: 14px;
+}
+
+#github-matcher li {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    list-style: none;
+}
+
+#github-matcher li img {
+	width: 100%;
+}
+
+#github-matcher .github-grid {
+	position: relative;
+    float: left;
+    width: 100%;
+}
+
+#github-matcher .pagination {
+    float: right;
+    position: relative;
+    left: -50%;
+}
+
+#github-matcher .nav-group {
+	position: relative;
+    left: 50%;
+}
+
+#github-matcher h2.headline-text {
+	color: #343B41;
+	font-size: 16px;
+}
+
+#github-matcher .pagination .next,
+#github-matcher .pagination .prev {
+    cursor: pointer;
+    float: left;
+    padding: 1em;
+}
+
+#github-matcher h3 {
+    text-transform: capitalize;
+    padding-top: 1em;
+    font-size: 14px;
+    text-align: center;
+    height: 90px;
+}
+
+@media screen and (min-width: 35.5em) {
+	#github-matcher li {
+	    width: 50%;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.blog:not(.has-sidebar) #primary article, 
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article, 
+	.search:not(.has-sidebar) #primary article, 
+	.error404:not(.has-sidebar) #primary .page-content, 
+	.error404.has-sidebar #primary .page-content, 
+	body.page-two-column:not(.archive) #primary .entry-content, 
+	body.page-two-column #comments {
+		width: 100%;
+		clear: both;
+	}
+
+	#github-matcher li {
+	    width: 33%;
+	}
+
+	#github-matcher h3 {
+		font-size: 18px;
+	}
+
+	h2.headline-text {
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+
+	h3.headline-text {
+		font-size: 24px;
+		letter-spacing: 2px;
+	}
+
+	p.headline-text {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	#sendpress-forms-widget-2 h2:before {
+	    left: -5.3em;
+	}
+}
